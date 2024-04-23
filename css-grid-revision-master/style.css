@@ -1,0 +1,102 @@
+:root{
+    --yellow: #fed653;
+    --gold: #8b740c;
+    --blue: #005880;
+    --purple: #81007f;
+    --skyblue: #76afba;
+}
+
+body{
+    width: 60%;
+    margin: auto;
+    font-family: Roboto, sans-serif;
+}
+main{
+    background-color: #cccccc;
+    height: 100vh;
+}
+h1{
+    padding: 30px 0 30px 0;
+    font-size: 30px;
+    text-align: center;
+}
+.hint{
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    padding-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, minmax(125px, auto));
+    row-gap: 15px;
+    column-gap: 15px;
+    grid-template-areas: 
+    "content1 content1 content2 content3"
+    "content4 content4 content4 content5"
+    "content6 content6 content6 content6"
+    "content7 content8 content9 content9";
+}
+.grid-container > :nth-child(1){
+    grid-area: content1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gold);
+}
+.grid-container > :nth-child(2){
+    grid-area: content2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+}
+.grid-container > :nth-child(3){
+    grid-area: content3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+}
+.grid-container > :nth-child(4){
+    grid-area: content4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+}
+.grid-container > :nth-child(5){
+    grid-area: content5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+}
+.grid-container > :nth-child(6){
+    grid-area: content6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple);
+}
+.grid-container > :nth-child(7){
+    grid-area: content7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+}
+.grid-container > :nth-child(8){
+    grid-area: content8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+}
+.grid-container > :nth-child(9){
+    grid-area: content9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--skyblue);
+}
